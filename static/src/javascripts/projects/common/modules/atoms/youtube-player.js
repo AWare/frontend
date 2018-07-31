@@ -97,14 +97,23 @@ const setupPlayer = (
             onStateChange,
             onError,
         },
-        playerVars: {
-            rel: 1,
-            showinfo: 0,
-        },
         embedConfig: {
-            adsConfig: {
-                nonPersonalizedAd: !wantPersonalisedAds,
+            "adsConfig": {
+                "nonPersonalizedAd": !wantPersonalisedAds,
             },
+            "relatedVideos": [
+                "j0ClmjvE5mM",
+                "-Sz_S8C3Q-w",
+                "eNWfpTyycv8",
+                "353bMO7zjHc",
+                "zqHmPJld-jY",
+                "SRP4dWWCHC8",
+                "vyKb1vPigW8",
+                "U0uTEVL8SaE",
+                "lCKGYbAUyb4",
+            ],
+            "relatedChannels": ["UCIRYBXDze5krPDzAEOxFGVA"],
+            "autonavRelatedVideos": true,
         },
     });
 };
