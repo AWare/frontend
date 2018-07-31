@@ -84,10 +84,12 @@ sizeCallbacks[adSizes.mpu] = (_, advert) => {
  */
 sizeCallbacks[adSizes.halfPage] = (_, advert) => {
     if (advert.node.classList.contains('js-sticky-mpu')) {
-        stickyMpu(advert.node);
-    }
-    if (advert.node.classList.contains('ad-slot--comments')) {
-        stickyCommentsMpu(advert.node);
+        if (advert.node.classList.contains('ad-slot--right')) {
+            stickyMpu(advert.node);
+        }
+        if (advert.node.classList.contains('ad-slot--comments')) {
+            stickyCommentsMpu(advert.node);
+        }
     }
 };
 
