@@ -238,15 +238,6 @@ const onPlayerReady = (
 
     if (overlay) {
         players[atomId].overlay = overlay;
-
-        if (
-            !!config.get('page.section') &&
-            isBreakpoint({
-                min: 'desktop',
-            })
-        ) {
-            players[atomId].endSlate = getEndSlate(overlay);
-        }
     }
 
     if (iframe && iframe.closest('.immersive-main-media__media')) {

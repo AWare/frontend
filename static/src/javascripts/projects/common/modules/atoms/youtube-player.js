@@ -98,7 +98,7 @@ const setupPlayer = (
             onError,
         },
         playerVars: {
-            rel: 0,
+            rel: 1,
             showinfo: 0,
         },
         embedConfig: {
